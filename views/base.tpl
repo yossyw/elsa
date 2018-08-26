@@ -61,7 +61,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="conversations.html">
+                    <a href="/call/list">
                         <i class="fas fa-phone"></i>
                         <span>Calls Log</span>
                     </a>

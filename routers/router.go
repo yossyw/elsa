@@ -23,4 +23,6 @@ func init() {
 	beego.Router("/intent/create", &controllers.IntentsController{}, "post:Create")
 	beego.Router("/intent/delete/:id", &controllers.IntentsController{}, "get:Delete")
 	beego.Router("/intent/view/:id", &controllers.IntentsController{}, "get:View")
+	beego.Router("/call/list", &controllers.CallLogController{}, "get:List")
+	beego.Router("/call/view", &controllers.CallLogController{}, "get:View")
 }
