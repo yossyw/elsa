@@ -21,8 +21,13 @@
                 <td>{{ .LastUpdatedDate }}</td>
                 <td>{{ .Version}}</td>             
                 <td>
-                    <input type="button" class="btn btn-secondary btn-sm" value="Edit" onclick="document.location.href='/intent/view/{{ .Name }}';">
-                    <input type="button" class="btn btn-secondary btn-sm" value="Delete" onclick="document.location.href='/intent/delete/{{ .Name }}';">
+                    <button type="button" class="btn btn-primary btn-sm" onclick="document.location.href='/intent/view/{{ .Name }}';"><i class="fas fa-edit"></i> Edit</button>                    
+                    <a class="btn btn-secondary btn-sm" href="/intent/delete/{{ .Name }}"
+                        data-toggle="confirmation" data-btn-ok-label="OK" data-btn-ok-class="btn-success"
+                        data-btn-cancel-label="Cancel" data-btn-cancel-class="btn-danger"
+                        data-title="Are you sure?" data-content="This record will be removed">
+                        <i class="fas fa-trash-alt"></i> Delete
+                    </a>
                 </td>
             </tr>
             {{ end }}
