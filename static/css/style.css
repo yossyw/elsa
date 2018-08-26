@@ -184,6 +184,55 @@ thead {
     padding: 8px;    
 }
 
+/* Chat containers */
+.chat-container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+/* Darker chat container */
+.darker {
+    border-color: #ccc;
+    background-color: #ddd;
+}
+
+.chat-container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.chat-container img {
+    float: left;
+    max-width: 40px;
+    width: 100%;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.chat-container img.right {
+    float: right;
+    margin-left: 10px;
+}
+
+/* Style time text */
+.time {
+    font-size: 0.8em;
+    color: #7c7c7c;
+}
+
+.time-right {
+    float: right;    
+}
+
+.time-left {
+    float: left;
+}
+
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
